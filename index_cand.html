@@ -3,7 +3,7 @@
 <head>
 	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 	<script>		
-		var ARREY_FIELDS = ["XITOR_KEY", "C_TOTAL_POLE_HT_W_ANT_FT", "C_GQ_SCIP_ANTENNA_HEIGHT", "C_OFFICIAL_RF_RAD_CENTER_RAD_FT", "C_GQ_SCP_RF_RAD_MEASURE", "C_CND_OFC_TWR_HT_FT", "C_GQ_SCIP_POLE_HEIGHT", "C_HEIGHT_OF_MW_ANTENNA_FT", "C_GQ_SCP_MW_RAD_CENTER"];
+		var ARRAY_FIELDS = ["XITOR_KEY", "C_TOTAL_POLE_HT_W_ANT_FT", "C_GQ_SCIP_ANTENNA_HEIGHT", "C_OFFICIAL_RF_RAD_CENTER_RAD_FT", "C_GQ_SCP_RF_RAD_MEASURE", "C_CND_OFC_TWR_HT_FT", "C_GQ_SCIP_POLE_HEIGHT", "C_HEIGHT_OF_MW_ANTENNA_FT", "C_GQ_SCP_MW_RAD_CENTER"];
 		var PAIRS_OF_FIELDS = {
 			"C_TOTAL_POLE_HT_W_ANT_FT": "C_GQ_SCIP_ANTENNA_HEIGHT",
 			"C_OFFICIAL_RF_RAD_CENTER_RAD_FT": "C_GQ_SCP_RF_RAD_MEASURE",
@@ -54,7 +54,7 @@
 					"Authorization": strPasLog
 				},
 				data: { 
-					fields: ARREY_FIELDS.join(',')
+					fields: ARRAY_FIELDS.join(',')
 				},
 				success: function(data) {
 					dataFieldLabel = data
@@ -69,7 +69,7 @@
 					"Authorization": strPasLog
 				},
 				data: { 
-					fields: ARREY_FIELDS.join(',')
+					fields: ARRAY_FIELDS.join(',')
 				},
 				success: function(data) {
 					creatingFieldObj(data, dataFieldLabel);
